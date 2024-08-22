@@ -1,0 +1,119 @@
+import styled from "styled-components";
+
+export const MainContaier = styled.div`
+  width: 60%;
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+`;
+
+export const Heading = styled.p`
+  color: #fff;
+  font-family: Kanit;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 53.82px;
+`;
+
+export const Card = styled.div`
+  // border: 1px solid crimson;
+  background: linear-gradient(180deg, #18264c 0%, #1f305f 100%);
+  width: 100%;
+  height: 88px;
+  border-radius: 24px;
+  opacity: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0px;
+  margin: auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: linear-gradient(209.3deg, #16c062 7.44%, #3eacfc 86.34%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    max-width: 20px;
+    height: 100%;
+    margin-left: -10px;
+    border-radius: 24px 0px 0px 24px;
+  }
+
+  @media only screen and (max-width: 580px) {
+  // border:2px solid blue;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+`;
+
+export const CardContainer = styled.div`
+  // border:2px solid white;
+  margin: 50px 100px 202px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+
+
+   @media only screen and (max-width: 580px){
+   width:100%;
+  margin: 50px 10px 202px 10px;
+   }
+`;
+
+export const ParagraphDashBorad = styled.p`
+  font-family: Kanit;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 35.88px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+
+  @media only screen and (max-width:580px) {
+    font-size:1.2em;
+    line-height:28px;
+  }
+`;
+
+export const Button = styled.button`
+  width: 129px;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  opacity: 1; 
+  color: white;
+  background: linear-gradient(209.3deg, #16c062 7.44%, #3eacfc 86.34%);
+  border: none;
+  font-family: Kanit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.92px;
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+
+  &:hover {
+    opacity: 0.9; 
+    transform: scale(1.05); 
+  }
+
+  @media only screen and (max-width: 580px) {
+    width:auto;
+    font-size: 14px; 
+    padding:8px 16px;
+  
+  }
+`;
+
