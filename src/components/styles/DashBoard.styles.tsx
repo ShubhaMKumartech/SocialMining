@@ -20,7 +20,11 @@ export const Card = styled.div`
   // border: 1px solid crimson;
   background: linear-gradient(180deg, #18264c 0%, #1f305f 100%);
   width: 100%;
-  height: 88px;
+height: 84px;
+
+border-radius: 24px 0px 0px 0px;
+opacity: 0px;
+
   border-radius: 24px;
   opacity: 0px;
   padding: 10px;
@@ -72,7 +76,7 @@ export const CardContainer = styled.div`
 
 export const ParagraphDashBorad = styled.p`
   font-family: Kanit;
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: 300;
   line-height: 35.88px;
   text-align: left;
