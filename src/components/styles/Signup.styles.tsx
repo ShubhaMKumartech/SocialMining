@@ -10,9 +10,9 @@ export const ImageContainer = styled.div`
 `;
 
 export const Banner = styled.img`
-  //  border:2px solid;
+   border:2px solid;
    width:600px;
-   height:700px;
+   height:650px;
 
    @media only screen and (max-width: 1200px){
    width:500px;
@@ -105,10 +105,10 @@ export const Token = styled.div`
 
 export const Token1 = styled.img`
 position: absolute;
-width: 283px;
-height: 244px;
-top:50px;
-left: 190px;
+width: 253px;
+height: 214px;
+top:0px;
+left: 160px;
 
 @media only screen and (max-width: 480px){
 position: absolute;

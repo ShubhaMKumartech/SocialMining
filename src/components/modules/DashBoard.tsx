@@ -1,4 +1,4 @@
-
+// import React from 'react'
 import {
   Button,
   Card,
@@ -25,6 +25,7 @@ const DashBoard:React.FC = () => {
 
   return (
     <>
+    {isPopUpVisible && <PopUP onClose = {handleClosePopUp}/>}
       <CardContainer>
         <Card>
           <ParagraphDashBorad>
@@ -52,7 +53,7 @@ const DashBoard:React.FC = () => {
         </Card>
       </CardContainer>
       
-      {isPopUpVisible && <PopUP onClose = {handleClosePopUp}/>}
+      
     </>
   );
 };

@@ -3,6 +3,7 @@ import {
   Data,
   FirstLine,
   MainDiv,
+  PopUpScreenContainer,
   Table,
   Table1,
 } from "../styles/PopUp.styles";
@@ -24,7 +25,8 @@ const PopUP: React.FC<PopUPProps> = ({ onClose }) => {
   };
 
   return (
-    <MainDiv onClick={handleOverlayClick}>
+    <PopUpScreenContainer onClick={handleOverlayClick}>
+       <MainDiv>
       <FirstLine>Link you accounts</FirstLine>
       <Table>
         <Table1>
@@ -63,6 +65,8 @@ const PopUP: React.FC<PopUPProps> = ({ onClose }) => {
         </div>
       </Table>
     </MainDiv>
+    </PopUpScreenContainer>
+   
   );
 };
 

@@ -14,25 +14,16 @@ const App = () => {
  const [titleHeader , setTitleHeader]= useState<string>(
   ''
  );
-
-  
-  
-
-
+ 
   return (
     <>
-   
     <Router>
     <TitleUpdater setTitleHeader={setTitleHeader} />
       <Routes>
-        
         <Route path="/" element={<Signup/>} />
         <Route path="/dashboard" element={ <SocialMining DashBoardTitle={titleHeader}/>}>
         <Route index element= { <DashBoard/>}></Route>
-
         </Route>
-         
-    
       </Routes>
     </Router>
     </>

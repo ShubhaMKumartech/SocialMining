@@ -34,21 +34,22 @@ opacity: 0px;
   opacity: 0px;
   margin: auto;
   position: relative;
+  box-shadow: -10px 0px 0px rgb(22, 192, 98), -15px 0px 0px rgb(62, 172, 252);
 
-  &::before {
-    content: "";
-    background: linear-gradient(209.3deg, #16c062 7.44%, #3eacfc 86.34%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    max-width: 20px;
-    height: 100%;
-    margin-left: -10px;
-    border-radius: 24px 0px 0px 24px;
-  }
+  // &::before {
+  //   content: "";
+  //   background: linear-gradient(209.3deg, #16c062 7.44%, #3eacfc 86.34%);
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   z-index: -1;
+  //   max-width: 20px;
+  //   height: 100%;
+  //   margin-left: -10px;
+  //   border-radius: 24px 0px 0px 24px;
+  // }
 
   @media only screen and (max-width: 580px) {
   // border:2px solid blue;

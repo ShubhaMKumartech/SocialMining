@@ -7,18 +7,17 @@ export const MainDiv = styled.div`
   padding: 30px;
   border-radius: 10px;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1001;
+  z-index: 998;
   display: flex;
   flex-direction: column;
   gap: 20px;
   @media only screen and (max-width: 580px){
   width: 360px;
   height: 290px;
-  top: 55%;
-  left: 50%;
+  
   }
 `;
 
@@ -67,5 +66,17 @@ export const ConnectionButton = styled.button`
 export const Table1 = styled.div`
 // border:2px solid green;
 display:flex;
+
+`
+
+export const PopUpScreenContainer = styled.div`
+// border:2px solid red;
+width:100%;
+height:100vh;
+background-color: rgba(0 , 0 , 0, 0.8);
+z-index:999;
+position:fixed;
+left:0;
+top:0;
 
 `
