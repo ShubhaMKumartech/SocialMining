@@ -1,58 +1,58 @@
 // import React from 'react'
 import {
-  Button,
   Card,
-  CardContainer,
-  ParagraphDashBorad,
+  DashBoardButton,
+  DashBoardCards,
+  DashBoardFooterText,
+  DashBoardText,
 } from "../styles/DashBoard.styles";
 
 import PopUP from "./PopUP";
 import { useState } from "react";
 
-const DashBoard:React.FC = () => {
-
-  
-  const[isPopUpVisible, setIsPopUpVisible] = useState<boolean>(false);
-
+const DashBoard: React.FC = () => {
+  const [isPopUpVisible, setIsPopUpVisible] = useState<boolean>(false);
 
   const handleConnectClick = () => {
     setIsPopUpVisible(true);
-  }
+  };
 
-  const handleClosePopUp = () =>{
+  const handleClosePopUp = () => {
     setIsPopUpVisible(false);
-  }
+  };
 
   return (
     <>
-    {isPopUpVisible && <PopUP onClose = {handleClosePopUp}/>}
-      <CardContainer>
+      {isPopUpVisible && <PopUP onClose={handleClosePopUp} />}
+      <DashBoardCards>
         <Card>
-          <ParagraphDashBorad>
+          <DashBoardText>
             Link Your Social Media to Start Mining Rewards
-          </ParagraphDashBorad>
-          <Button onClick={handleConnectClick}>Connect</Button>
+          </DashBoardText>
+          <DashBoardButton onClick={handleConnectClick}>
+            Connect
+          </DashBoardButton>
         </Card>
         <Card>
-          <ParagraphDashBorad>
-          Browse the Task List, Complete Challenges, and Earn Rewards!
-          </ParagraphDashBorad>
-          <Button>View Tasks</Button>
+          <DashBoardText>
+            Browse the Task List, Complete Challenges, and Earn Rewards!
+          </DashBoardText>
+          <DashBoardButton>View Tasks</DashBoardButton>
         </Card>
         <Card>
-          <ParagraphDashBorad>
-          View Top Contributors in the Community
-          </ParagraphDashBorad>
-          <Button>View</Button>
+          <DashBoardText>
+            View Top Contributors in the Community
+          </DashBoardText>
+          <DashBoardButton>View</DashBoardButton>
         </Card>
         <Card>
-          <ParagraphDashBorad>
-          Link Your Wallet to Receive Your Social Mining Rewards
-          </ParagraphDashBorad>
-          <Button>Get Rewards</Button>
+          <DashBoardText>
+            Link Your Wallet to Receive Your Social Mining Rewards
+          </DashBoardText>
+          <DashBoardButton>Get Rewards</DashBoardButton>
         </Card>
-      </CardContainer>
-      
+        <DashBoardFooterText>Airdrops will be distributed at the end of each month based on each user’s accrued points</DashBoardFooterText>
+      </DashBoardCards>
       
     </>
   );

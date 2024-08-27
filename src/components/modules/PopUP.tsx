@@ -1,11 +1,13 @@
 import {
   ConnectionButton,
-  Data,
-  FirstLine,
-  MainDiv,
+  ConnectionButtonWrapper,
+  MainPopUpScreen,
+  PopScreenText,
+  PopUpScreenCard,
   PopUpScreenContainer,
-  Table,
-  Table1,
+  PopUpScreenTitle,
+  PopUpScreenWrapper,
+  SocialMediaIcon,
 } from "../styles/PopUp.styles";
 
 import twitter from "../../assets/Twitter.svg";
@@ -26,47 +28,46 @@ const PopUP: React.FC<PopUPProps> = ({ onClose }) => {
 
   return (
     <PopUpScreenContainer onClick={handleOverlayClick}>
-       <MainDiv>
-      <FirstLine>Link you accounts</FirstLine>
-      <Table>
-        <Table1>
-          <img src={twitter} alt="Image of Twitter" />
-          <Data>Connect with Twitter</Data>
-        </Table1>
-        <div>
-          <ConnectionButton>Connected</ConnectionButton>
-        </div>
-      </Table>
-      <Table>
-        <Table1>
-          <img src={reddit} alt="Reddit Image" />
-          <Data>Connect with Reddit</Data>
-        </Table1>
-        <div>
-          <ConnectionButton>Connect</ConnectionButton>
-        </div>
-      </Table>
-      <Table>
-        <Table1>
-          <img src={discord} alt="Discord Image" />
-          <Data>Connect with Discord</Data>
-        </Table1>
-        <div>
-          <ConnectionButton>Connect</ConnectionButton>
-        </div>
-      </Table>
-      <Table>
-        <Table1>
-          <img src={telegram} alt="Telegram Image" />
-          <Data>Connect with $TENEX</Data>
-        </Table1>
-        <div>
-          <ConnectionButton>Connect</ConnectionButton>
-        </div>
-      </Table>
-    </MainDiv>
+      <MainPopUpScreen>
+        <PopUpScreenTitle>Link you accounts</PopUpScreenTitle>
+        <PopUpScreenWrapper>
+          <PopUpScreenCard>
+            <SocialMediaIcon src={twitter} alt="Image of Twitter" />
+            <PopScreenText>Connect with Twitter</PopScreenText>
+          </PopUpScreenCard>
+          <ConnectionButtonWrapper>
+            <ConnectionButton>Connected</ConnectionButton>
+          </ConnectionButtonWrapper>
+        </PopUpScreenWrapper>
+        <PopUpScreenWrapper>
+          <PopUpScreenCard>
+            <SocialMediaIcon src={reddit} alt="Reddit Image" />
+            <PopScreenText>Connect with Reddit</PopScreenText>
+          </PopUpScreenCard>
+          <ConnectionButtonWrapper>
+            <ConnectionButton>Connect</ConnectionButton>
+          </ConnectionButtonWrapper>
+        </PopUpScreenWrapper>
+        <PopUpScreenWrapper>
+          <PopUpScreenCard>
+            <SocialMediaIcon src={discord} alt="Discord Image" />
+            <PopScreenText>Connect with Discord</PopScreenText>
+          </PopUpScreenCard>
+          <ConnectionButtonWrapper>
+            <ConnectionButton>Connect</ConnectionButton>
+          </ConnectionButtonWrapper>
+        </PopUpScreenWrapper>
+        <PopUpScreenWrapper>
+          <PopUpScreenCard>
+            <SocialMediaIcon src={telegram} alt="Telegram Image" />
+            <PopScreenText>Connect with $TENEX</PopScreenText>
+          </PopUpScreenCard>
+          <ConnectionButtonWrapper>
+            <ConnectionButton>Connect</ConnectionButton>
+          </ConnectionButtonWrapper>
+        </PopUpScreenWrapper>
+      </MainPopUpScreen>
     </PopUpScreenContainer>
-   
   );
 };
 

@@ -1,41 +1,33 @@
 import styled from "styled-components";
 
 export const ImageContainer = styled.div`
-  // border: 2px solid red;
   display: block;
-   float: right;
-
-   
-
+  float: right;
 `;
 
 export const Banner = styled.img`
-   border:2px solid;
-   width:600px;
-   height:650px;
+  width: 600px;
+  height: 650px;
 
-   @media only screen and (max-width: 1200px){
-   width:500px;
-   height:600px;
-   }
+  @media only screen and (max-width: 1200px) {
+    width: 500px;
+    height: 600px;
+  }
 
-   @media only screen and (max-width: 1000px){
-   width:400px;
-   height:600px;
-}
+  @media only screen and (max-width: 1000px) {
+    width: 400px;
+    height: 600px;
+  }
 
-@media only screen and (max-width: 600px){
-   width:300px;
-   height:400px;
-}
-     @media only screen and (max-width: 580px){
-    display:none;
-}
-
- 
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+    height: 400px;
+  }
+  @media only screen and (max-width: 580px) {
+    display: none;
+  }
 `;
-export const Data = styled.div`
-  // border:2px solid yellow;
+export const SignUpDetails = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,8 +36,7 @@ export const Data = styled.div`
   margin-top: 150px;
 `;
 
-export const Title = styled.h1`
-  // border:1px solid crimson;
+export const SignUpTitle = styled.h1`
   width: 302px;
   height: 62px;
   top: 298px;
@@ -57,11 +48,9 @@ export const Title = styled.h1`
   font-size: 38px;
   font-weight: 300;
   line-height: 71.76px;
-  // text-align: center;
 `;
 
-export const Paragraph = styled.p`
-  // border:1px solid royalblue;
+export const SignUpText = styled.p`
   width: 370px;
   height: 36px;
   top: 374px;
@@ -77,7 +66,7 @@ export const Paragraph = styled.p`
   text-align: center;
 `;
 
-export const SignButton = styled.button`
+export const SignUpButton = styled.button`
   background: linear-gradient(209.3deg, #16c062 7.44%, #3eacfc 86.34%);
   border: none;
   width: 100%;
@@ -97,26 +86,22 @@ export const SignButton = styled.button`
   justify-content: center;
 `;
 
-export const Token = styled.div`
-  // border:2px solid black;
-  
+export const SignUpToken = styled.div`
   position: relative;
 `;
 
-export const Token1 = styled.img`
-position: absolute;
-width: 253px;
-height: 214px;
-top:0px;
-left: 160px;
+export const SignUpTokens = styled.img`
+  position: absolute;
+  width: 253px;
+  height: 214px;
+  top: 10px;
+  left: 240px;
 
-@media only screen and (max-width: 480px){
-position: absolute;
-width: 283px;
-height: 244px;
-top:50px;
-left: 10px;
-}
-
+  @media only screen and (max-width: 480px) {
+    position: absolute;
+    width: 283px;
+    height: 244px;
+    top: 50px;
+    left: 10px;
+  }
 `;
-

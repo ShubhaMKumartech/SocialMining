@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainDiv = styled.div`
+export const MainPopUpScreen = styled.div`
   background: linear-gradient(180deg, #18264c 0%, #1f305f 100%);
   width: 460px;
   height: 290px;
@@ -21,7 +21,7 @@ export const MainDiv = styled.div`
   }
 `;
 
-export const FirstLine = styled.div`
+export const PopUpScreenTitle = styled.div`
   //  border:2px solid royalblue;
   font-family: Kanit;
   font-size: 24px;
@@ -31,14 +31,17 @@ export const FirstLine = styled.div`
   color: #fff;
 `;
 
-export const Table = styled.div`
+export const PopUpScreenWrapper = styled.div`
   // border:3px solid pink;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
-export const Data = styled.h4`
+export const SocialMediaIcon = styled.img`
+`;
+
+export const PopScreenText = styled.h4`
   font-family: Kanit;
   font-size: 16px;
   font-weight: 300;
@@ -48,6 +51,8 @@ export const Data = styled.h4`
   padding: 5px;
 `;
 
+
+export const ConnectionButtonWrapper = styled.div``;
 export const ConnectionButton = styled.button`
   background: linear-gradient(209.3deg, #16c062 7.44%, #3eacfc 86.34%);
   width: 100px;
@@ -63,8 +68,7 @@ export const ConnectionButton = styled.button`
 `;
 
 
-export const Table1 = styled.div`
-// border:2px solid green;
+export const PopUpScreenCard = styled.div`
 display:flex;
 
 `

@@ -60,7 +60,7 @@ opacity: 0px;
   }
 `;
 
-export const CardContainer = styled.div`
+export const DashBoardCards = styled.div`
   // border:2px solid white;
   margin: 50px 100px 202px 100px;
   display: flex;
@@ -75,7 +75,7 @@ export const CardContainer = styled.div`
    }
 `;
 
-export const ParagraphDashBorad = styled.p`
+export const DashBoardText = styled.p`
   font-family: Kanit;
   font-size: 24px;
   font-weight: 300;
@@ -83,13 +83,17 @@ export const ParagraphDashBorad = styled.p`
   text-align: left;
   color: rgba(255, 255, 255, 1);
 
+  @media only screen and (max-width:780px) {
+    font-size:1.2em;
+    line-height:28px;
+  }
   @media only screen and (max-width:580px) {
     font-size:1.2em;
     line-height:28px;
   }
 `;
 
-export const Button = styled.button`
+export const DashBoardButton = styled.button`
   width: 129px;
   height: 40px;
   padding: 10px 20px;
@@ -122,3 +126,13 @@ export const Button = styled.button`
   }
 `;
 
+export const DashBoardFooterText = styled.p`
+font-family: Kanit;
+font-size: 20px;
+font-weight: 300;
+line-height: 29.9px;
+text-align: center;
+color:#fff;
+
+
+`
